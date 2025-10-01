@@ -25,3 +25,35 @@ else:
 
 
    print()
+
+
+   #CHALLANGE 2 PART
+print('=== Challenge 2: Prime Number Checker ===')
+
+
+input_pos= int(input())
+is_prime=True
+print(f"Enter a number: Testing divisors from 2 to {input_pos-1}...")
+while input_pos<=0:
+   input_pos= int(input())
+
+
+for i in range(2,input_pos-1):
+   if input_pos%i==0:
+      is_prime=False
+      break
+   else:
+       is_prime=True
+      
+        
+
+
+if is_prime==False:
+   print(f"{input_pos} is not prime (divisible by {i})")
+
+
+if is_prime==True:
+   print(f"{input_pos} is prime!")
+
+
+print()
