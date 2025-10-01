@@ -57,3 +57,16 @@ if is_prime==True:
 
 
 print()
+#CHALLANGE 3 PART
+print('=== Challenge 3: Multiplication Table ===')
+print('Multiplication Table:')
+
+
+print("     1   2   3   4   5   6   7   8   9  10")
+for rows in range(1,11):
+  
+   print(f"{rows:2}", end="")
+  
+   for cols in range(1,11):
+       print(f"{rows * cols:4}", end="")
+   print()
